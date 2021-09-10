@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AULA3 - DESAFIO</title>
+</head>
+
+<style>
+	
+	* {
+		font-family:verdana, arial, helvetica;
+	}
+
+	body {
+		margin: 0;
+	}
+
+	header, footer {
+		width: 100%;
+		background-color: #455A64;
+		color: #fff;
+		display: flex;
+		position: fixed;
+		align-items: center;
+
+	}
+
+	header {
+		height: 7%;
+		font-size: 25px;
+	}
+
+	footer {
+		height: 13%;
+		font-size: 35px;
+		justify-content: center;
+		bottom: 0;
+	}
+
+	#logo {
+		padding-left: 15%;		
+	}
+
+	a {
+		text-decoration: none;
+		color: #fff;
+	}
+
+	li {
+		width: 120px;
+		height: 60px;
+		color:#fff;
+		margin-right: 10%;
+		margin-left: 10%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	ul {
+		padding: 0;
+		margin: 0;
+		margin-left: 40%;
+		display: flex;
+	}
+
+	.btn {
+		width: 100px;
+		height: 30px;
+		border: none;
+		background-color: #25f981;
+		border-radius: 50px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 5px;
+	}
+
+	main {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		margin-top: 290px;
+		display: flex;
+		flex-direction: row;
+
+		}
+
+	#texto { 
+		margin-left: 35%;
+		padding:0;
+		width: 250px;
+		height: 155px;
+		background-color: #dae5e6;
+		box-sizing: border-box;
+	}
+
+	form { 
+		width: 250px;
+		height: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		padding:10px;
+		margin-top: 15px;
+		}
+
+	#form {
+		width: auto;
+		height: 300px;
+		margin-left: 10px;
+		margin-top: -50px;
+		border-left: 3px dashed #000;
+
+	}
+	
+	#email {
+		width: auto;
+		height::auto;
+		color: #616161;
+		display: flex;
+		justify-content: center;
+		margin-top: 110px;
+	}
+
+	#enviar {
+		margin-top: 5px;
+		padding: 5px;
+		width: 80px;
+		height: auto;
+		border-radius: 50px;
+		border: none;
+		background-color: #25f981;
+		margin-left: 80px;
+	}
+
+	#box {
+		background-color: #fff;
+		outline: none;
+	}
+
+</style>
+
+	<header>
+		<div id="logo"><b>LOGO</b></div>
+		<ul>
+			<li><a class="btn" href="">Home</a></li>
+			<li><a href="">Contato</a></li>
+			<li><a href="">Sobre</a></li>
+		</ul>
+
+	</header>
+
+	<main>
+		<div id="texto">
+			"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos adipisci eum doloribus alias quia quo ea cumque laborum sapiente minus harum odit magnam quaerat, eius similique dolor facere maiores natus."	
+		</div>
+		<div id="form">
+			<div id="email">Insira seu e-mail :</div>
+			<form>
+				<input id="box" type="text" placeholder="e-mail" name="e-mail">
+				<input id="enviar" type="submit" name="Enviar">
+			</form>
+		</div>
+	</main>
+
+	<footer>
+		<div><b>by - TI ACADEMY</b></div>
+	</footer>
+
+<body>
+	
+</body>
+</html>
