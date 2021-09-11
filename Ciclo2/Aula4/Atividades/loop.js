@@ -1,60 +1,51 @@
-/*
-window.onload = function (){
+window.onload = function () {
 
-let i=0
-*/
-//i++
-//console.log (i);
-//var arr = ["caneta", "mouse"];
+    //let i=0;
 
-//console.log (`Comprimento do array é ${arr.length}`);
+    //i++;
+    //console.log (i);
+    //var arr = ["caneta", "mouse"];
+    //console.log (`Comprimento do array é ${arr.length}`);
 
-//console.log (i);
+    //console.log (i);
 
-/* var arr = ["caneta", "mouse", "monitor", "teclado", "outro elemento"];
-console.log (arr[0]);
+    /*var arr = ["caneta", "mouse", "monitor", "teclado", "outro elemento"];
+    console.log (arr[0]);
 
- for (var inc = 0; inc < arr.length ; inc++ ) {
-	console.log (`Valor do inc ${inc}`);
- }
- */
+    for (var inc=0; inc < arr.length; inc++) {
+        console.log (`Valor do inc ${inc}`);
+    }
+    
 
- //var arr = ["caneta", "mouse", "monitor", "teclado", "outro elemento"];
- //arr [0] caneta
+    var arr = ["caneta", "mouse", "monitor", "teclado", "outro elemento"];
+    //arr [0] caneta
 
-/*
- for (let idx in arr) {
- 	console.log (arr[idx])
- }
+    for ( let idx in arr) {
+        console.log (arr [idx]);
+    }
+    
 
-var arr = ["caneta", "mouse", "monitor", "teclado", "outro elemento", "mais um"];
+    var arr = ["caneta", "mouse", "monitor", "teclado", "outro elemento", "mais um"];
 
-for (var i of arr){
-	console.log (i);
-}
+    for (var i of arr) {
+        console.log (i);
+    }
+    
 
+    var x = 0;
+    while (x<10) {
+        x++;
+        console.log(x);
+    }
+    
+    do {
 
-var x = 0;
-while (x < 10){
-	x++;
-	console.log (x);
-}
+        n = prompt ("Digite zero");
 
-do {
-	n = prompt ("Digite zero");
+        if (n != 0) {
+            alert ("Diferente de zero")
+        }
 
-	if (n !=0) {
-		alert ("Diferente de zero");
-	}
-}while( n != 0 )
-*/
+    } while (n != 0);
 
-
-
-
-
-
-
-
-
-}
+}*/

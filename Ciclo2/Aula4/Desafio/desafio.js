@@ -15,14 +15,14 @@ window.onload = function () {
 	const cestaDoCliente = document.querySelector ("ul#cestaDoCliente");
 	const mostraTotalCompra = document.querySelector ("#mostraTotalCompra");
 	const armazenaItens = [];
+
 	var totalPedido = 0;
 
 	itemProduto.forEach ( (item)=> {
-
 		item.addEventListener ('click', ()=>{
 
 			li = document.createElement ("li");
-
+			li.setAttribute ("data-preco", item.dataset.preco);
 			if(armazenaItens.indexOf (item.textContent) == -1) {
 
 				armazenaItens.push (item.textContent);
@@ -34,7 +34,6 @@ window.onload = function () {
 				mostraTotalCompra.value = totalPedido.toLocaleString ('pt-br', 
 				{style: 'currency', currency: 'BRL'}
 					)
-
 			} else {
 				alert (`Este item${item.textContent} já está na sua cesta`);
 			}
@@ -43,4 +42,24 @@ window.onload = function () {
 
 	})
 
+	const tirarCesta = document.querySelectorAll("#cestaDoCliente");
+
+	tirarCesta.forEach((item)=> {
+    	item.addEventListener("click", (itemCesta) => {
+        	var idx = armazenaItens.indexOf(itemCesta.target.textContent);
+        	if(idx > -1) {
+
+            	totalPedido -= Number(itemCesta.target.dataset.preco);
+
+            	cestaDoCliente.removeChild(cestaDoCliente.childNodes[idx]);
+
+            	armazenaItens.splice(idx, 1);
+            	
+            	mostraTotalCompra.value = totalPedido.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    
+        }    
+    })
+})
+
 }
+	
